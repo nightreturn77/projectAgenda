@@ -30,7 +30,7 @@ public class Contato implements java.io.Serializable{
 		this.nome = nome;
 		this.tel = tel;
 		this.email = email;
-		this.setEndereco(endereco);
+		this.endereco = endereco;
 	}
 
 
@@ -115,18 +115,6 @@ public class Contato implements java.io.Serializable{
 	@Override
 	public String toString() {
 		return "Contato [id=" + id + ", nome=" + nome + ", tel=" + tel + ", email=" + email + "]";
-	}
-
-
-
-	public String getEndereco() {
-		return endereco;
-	}
-
-
-
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
 	}
 	
 	
