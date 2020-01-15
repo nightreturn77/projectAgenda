@@ -13,6 +13,7 @@ public class Contato implements java.io.Serializable{
 	private Long id; 
 	private String nome; 
 	private Integer tel; 
+	private String endereco;
 	private String email; 
 	
 	
@@ -23,12 +24,13 @@ public class Contato implements java.io.Serializable{
 
 
 
-	public Contato(Long id, String nome, Integer tel, String email) {
+	public Contato(Long id, String nome, Integer tel, String email, String endereco) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.tel = tel;
 		this.email = email;
+		this.setEndereco(endereco);
 	}
 
 
@@ -113,6 +115,18 @@ public class Contato implements java.io.Serializable{
 	@Override
 	public String toString() {
 		return "Contato [id=" + id + ", nome=" + nome + ", tel=" + tel + ", email=" + email + "]";
+	}
+
+
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 	
 	
